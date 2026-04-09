@@ -2,4 +2,4 @@ docker run -it --restart always -d -p 80:80 --name cdn -v /home/isbo/cdn/conf/ng
 
 sudo mount -t cifs -o rw,vers=3.0,credentials=/root/.smbcredentials //192.168.1.219/Cdn /home/isbo/cdn/html
 
-//192.168.1.219/Cdn /home/isbo/cdn/html cifs -o rw,vers=3.0,credentials=/root/.smbcredentials
+//192.168.1.219/Cdn /home/isbo/cdn/html cifs rw,vers=3.0,credentials=/root/.smbcredentials
